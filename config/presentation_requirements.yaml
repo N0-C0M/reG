@@ -1,4 +1,4 @@
-version: 1
+version: 2
 language: ru
 slides:
   min_main_slides: 10
@@ -6,11 +6,28 @@ slides:
   final_questions_min: 2
   final_questions_max: 3
   interactive_blocks_min: 3
-  visual_area_target_percent: [55, 75]
+  visual_area_target_percent: [50, 72]
   forbid_small_gray_bottom_captions: true
+  content_words_target: [25, 45]
+  max_accent_colors_per_slide: 2
+  max_independent_cards_preferred: 3
+  require_consistent_grid: true
+  require_whitespace: true
+  avoid_ui_card_wall: true
+  avoid_decorative_infographics: true
+text:
+  natural_student_voice: true
+  short_slide_sentences: true
+  avoid_repetitive_ai_phrases: true
+  avoid_redundant_headline_subtitle_caption: true
+  explain_terms_in_plain_russian: true
+  move_details_to_speaker_script: true
 speech:
   target_minutes: 15
   acceptable_minutes: [14, 16]
+  conversational_russian: true
+  avoid_academic_article_tone: true
+  avoid_verbatim_slide_repetition: true
 visuals:
   generated_photos_allowed: false
   real_photos_required_for_documentary_visuals: true
@@ -21,5 +38,5 @@ sources:
   bare_urls_as_bibliography_allowed: false
   prioritize_books: true
 outputs:
-  presentation: projects/topic-09-panarin/presentation.pptx
-  speaker_script: projects/topic-09-panarin/speaker_script.docx
+  presentation: projects/current/presentation.pptx
+  speaker_script: projects/current/speaker_script.docx
