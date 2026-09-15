@@ -1,0 +1,25 @@
+version: 1
+language: ru
+slides:
+  min_main_slides: 10
+  target_main_slides: [12, 18]
+  final_questions_min: 2
+  final_questions_max: 3
+  interactive_blocks_min: 3
+  visual_area_target_percent: [55, 75]
+  forbid_small_gray_bottom_captions: true
+speech:
+  target_minutes: 15
+  acceptable_minutes: [14, 16]
+visuals:
+  generated_photos_allowed: false
+  real_photos_required_for_documentary_visuals: true
+  track_image_provenance: true
+sources:
+  visible_language: ru
+  english_titles_on_final_slides_allowed: false
+  bare_urls_as_bibliography_allowed: false
+  prioritize_books: true
+outputs:
+  presentation: projects/topic-09-panarin/presentation.pptx
+  speaker_script: projects/topic-09-panarin/speaker_script.docx
