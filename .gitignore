@@ -1,0 +1,6 @@
+~$*
+.DS_Store
+Thumbs.db
+output/*.tmp
+output/*.pdf.tmp
+presentation_template.pptx
