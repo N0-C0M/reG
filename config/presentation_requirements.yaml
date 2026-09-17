@@ -1,11 +1,13 @@
-version: 2
+version: 4
 language: ru
 slides:
   min_main_slides: 10
   target_main_slides: [12, 18]
-  final_questions_min: 2
-  final_questions_max: 3
+  final_questions_min: 0
+  final_questions_max: 0
+  forbid_final_question_block: true
   interactive_blocks_min: 3
+  interactive_blocks_during_main_content: true
   visual_area_target_percent: [50, 72]
   forbid_small_gray_bottom_captions: true
   content_words_target: [25, 45]
@@ -28,15 +30,32 @@ speech:
   conversational_russian: true
   avoid_academic_article_tone: true
   avoid_verbatim_slide_repetition: true
+  forbid_questions_at_end: true
 visuals:
-  generated_photos_allowed: false
-  real_photos_required_for_documentary_visuals: true
-  track_image_provenance: true
+  real_materials_first: true
+  search_web_before_generation: true
+  generated_images_allowed_as_fallback: true
+  generated_images_only_when_no_suitable_web_material: true
+  generated_images_require_high_quality: true
+  generated_images_must_match_context_and_style: true
+  generated_images_must_not_contain_ai_label: true
+  generated_images_must_not_be_used_as_historical_evidence: true
+  generated_images_must_not_impersonate_documentary_photos: true
+  track_real_image_provenance: true
 sources:
   visible_language: ru
   english_titles_on_final_slides_allowed: false
   bare_urls_as_bibliography_allowed: false
   prioritize_books: true
+  citation_required_for_every_number: true
+  verify_numeric_claim_against_source: true
+  web_article_format: "Автор 1, Автор 2, Название статьи, URL, дата обращения: ДД.ММ.ГГГГ"
+  authors_separator: ", "
+  article_title_quotes: false
+  web_url_required: true
+  access_date_required: true
+  book_fields_required: [author, title, publication_place, publisher, year]
+  academic_article_fields_preferred: [authors, title, journal, year, issue, pages]
 outputs:
   presentation: projects/current/presentation.pptx
   speaker_script: projects/current/speaker_script.docx
