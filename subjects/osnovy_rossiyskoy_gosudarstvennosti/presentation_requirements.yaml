@@ -1,0 +1,54 @@
+profile_id: osnovy_rossiyskoy_gosudarstvennosti
+subject_name: "Основы российской государственности"
+profile_scope: subject_only
+inherits_other_subjects: false
+
+slides:
+  min_main_slides: 10
+  target_main_slides: [12, 18]
+  final_question_block: false
+  interactive_blocks_min: 3
+  interactive_blocks_during_main_content: true
+  public_classroom_display: true
+  presenter_notes_on_slides: false
+  clean_bottom_area: true
+  content_words_target: [25, 45]
+  require_university_template_and_symbols: true
+
+speech:
+  separate_script: true
+  target_minutes: 15
+  acceptable_minutes: [14, 16]
+  questions_at_end: false
+  presenter_notes_belong_here: true
+
+text:
+  natural_student_voice: true
+  avoid_ai_sounding_phrases: true
+  avoid_meta_comments: true
+  avoid_redundant_footer_text: true
+
+visuals:
+  real_materials_first: true
+  search_web_before_generation: true
+  generated_images_allowed_as_fallback: true
+  generated_images_only_when_no_suitable_web_material: true
+  generated_images_require_high_quality: true
+  generated_images_must_not_contain_ai_label: true
+  generated_images_must_not_be_used_as_historical_evidence: true
+  generated_images_must_not_impersonate_documentary_photos: true
+
+sources:
+  citation_required_for_every_number: true
+  verify_numeric_claim_against_source: true
+  web_article_format: "Автор 1, Автор 2, Название статьи, URL, дата обращения: ДД.ММ.ГГГГ"
+  authors_separator: ", "
+  article_title_quotes: false
+  web_url_required: true
+  access_date_required: true
+  prioritize_books_and_academic_sources: true
+
+routing:
+  apply_only_when_subject_matches: true
+  fallback_to_this_profile_for_other_subjects: false
+  require_new_subject_profile_when_unknown: true
